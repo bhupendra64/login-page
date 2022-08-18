@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+}
+.home{
+    width: 100%;
+    height: auto;
+    background-image:url("./img2.webp") ;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    padding-bottom: 50%;
+    position: absolute;
+    padding: 0 6%;
+    padding-top: 50px;
+    color: #ffffff;
+    
+ 
+   
+}
+
+.nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    
+
+    align-items: center;
+    color: white;
+  position: relative;
+
+}
+.nav p{
+    padding:0 5%;
+    margin-top: 5px;
+    color: rgb(165, 165, 165);
+}
+.nav h1{
+    margin-right: 5%;
+}
+.bi-circle-fill{
+    color: rgb(70, 144, 255);
+    margin-right: 5px;
+}
+.doat{
+    color: rgb(70, 144, 255);
+}
+
+.bi-list{
+    display: none;
+}
+.page1{
+    position: relative;
+    margin-top: 8%;
+}
+.p1p1{
+    margin: 20px 0;
+    color: rgb(165, 165, 165); 
+}
+.p1p2{
+    font-size: 40px;
+}
+a{
+    text-decoration: none;
+}
+.inputs{
+    display: flex;
+}
+
+.pbtn{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 200px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 10px;
+   
+    border: none;
+    margin-right: 20px;
+    background-color: rgb(26, 23, 23);
+    border-radius: 15px;
+    color: #ffffff;
+
+}
+.small{
+    font-size: 12px;
+    color: rgb(165, 165, 165);
+}
+input{
+    background: none;
+    border: none;
+    color: #ffffff;
+}
+input::placeholder{
+    color: #ffffff;
+}
+.bi-person-lines-fill{
+    margin-right: 10px;
+}
+
+
+.emails{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 420px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 10px;
+   
+    border: none;
+    margin-top: 20px;
+    background-color: rgb(26, 23, 23);
+    border-radius: 15px;
+    color: #ffffff;
+}
+#email{
+    width: 150%;
+}
+.password{
+   
+    border: 2px solid rgb(19, 15, 223);
+    box-shadow: 0px 0px 10px 1px rgba(9,20,224,1);
+
+
+}
+.mainbtn{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+input:active ,input:focus{
+    border: none;
+    outline: none;
+ 
+    background: none;
+}
+.mb{
+
+    display: flex;
+    
+    align-items: center;
+    justify-content:center;
+
+    width: 200px;
+    height: 50px;
+   
+   
+    border: none;
+    margin-right: 20px;
+    background-color: rgb(26, 23, 23);
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 17px;
+}
+.mainbtn-2{
+    background-color: rgb(43, 43, 146);
+}
+
+
+@media only screen and (max-width: 600px)  {
+    
+    .nav p{
+        display: none;
+    }
+    .nav{
+        justify-content: space-between;
+        
+    }
+    .bi-list{
+        display: block;
+        font-size: 20px;
+        
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .page1{
+        text-align: center;
+    }
+    .inputs{
+        flex-direction: column;
+        text-align: left;
+    }
+    .pbtn{
+        margin-top: 20px;
+    }
+    .emails{
+        width: 100%;
+        text-align: left;
+    }
+    .mainbtn{
+        width: 100%;
+        flex-direction: column;
+    }
+    .mb{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
